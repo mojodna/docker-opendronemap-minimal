@@ -1,4 +1,5 @@
 FROM ubuntu:14.04
+MAINTAINER Seth Fitzsimmons <seth@mojodna.net>
 
 ENV DEBIAN_FRONTEND noninteractive
 
