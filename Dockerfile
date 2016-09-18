@@ -6,34 +6,34 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
   apt-get upgrade -y && \
   apt-get install -y --no-install-recommends \
-  gdal-bin \
-  jhead \
-  libatlas3-base \
-  libboost-chrono1.54.0 \
-  libboost-date-time1.54.0 \
-  libboost-filesystem1.54.0 \
-  libboost-iostreams1.54.0 \
-  libboost-python1.54.0 \
-  libboost-regex1.54.0 \
-  libboost-serialization1.54.0 \
-  libboost-system1.54.0 \
-  libboost-thread1.54.0 \
-  libgdal1h \
-  libgeotiff2 \
-  libgomp1 \
-  libgoogle-glog0 \
-  libpython2.7 \
-  libproj0 \
-  libspqr1.3.1 \
-  libvtk5.8 \
-  python \
-  python-networkx \
-  python-numpy \
-  python-pip \
-  python-pyexiv2 \
-  python-pyside \
-  python-scipy \
-  python-yaml && \
+    gdal-bin \
+    jhead \
+    libatlas3-base \
+    libboost-chrono1.54.0 \
+    libboost-date-time1.54.0 \
+    libboost-filesystem1.54.0 \
+    libboost-iostreams1.54.0 \
+    libboost-python1.54.0 \
+    libboost-regex1.54.0 \
+    libboost-serialization1.54.0 \
+    libboost-system1.54.0 \
+    libboost-thread1.54.0 \
+    libgdal1h \
+    libgeotiff2 \
+    libgomp1 \
+    libgoogle-glog0 \
+    libpython2.7 \
+    libproj0 \
+    libspqr1.3.1 \
+    libvtk5.8 \
+    python \
+    python-networkx \
+    python-numpy \
+    python-pip \
+    python-pyexiv2 \
+    python-pyside \
+    python-scipy \
+    python-yaml && \
   apt-get clean
 
 RUN pip install -U \
