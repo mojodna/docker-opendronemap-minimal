@@ -4,9 +4,6 @@ MAINTAINER Seth Fitzsimmons <seth@mojodna.net>
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
-  apt-get install -y --no-install-recommends software-properties-common && \
-  add-apt-repository -y ppa:ubuntugis/ubuntugis-unstable && \
-  apt-get update && \
   apt-get upgrade -y && \
   apt-get install -y --no-install-recommends \
     gdal-bin \
@@ -21,10 +18,10 @@ RUN apt-get update && \
     libboost-serialization1.54.0 \
     libboost-system1.54.0 \
     libboost-thread1.54.0 \
+    libgdal1h \
     libgeotiff2 \
     libgomp1 \
     libgoogle-glog0 \
-    libjasper1 \
     libpython2.7 \
     libproj0 \
     libspqr1.3.1 \
