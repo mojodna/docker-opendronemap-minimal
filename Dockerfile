@@ -31,6 +31,7 @@ RUN apt-get update && \
     python-numpy \
     python-pip \
     python-pyexiv2 \
+    python-pyproj \
     python-pyside \
     python-scipy \
     python-yaml && \
