@@ -49,15 +49,15 @@ COPY staging/code/SuperBuild/build/pdal/bin/ /code/SuperBuild/build/pdal/bin/
 COPY staging/code/SuperBuild/install/ /code/SuperBuild/install/
 COPY staging/code/SuperBuild/src/opensfm/ /code/SuperBuild/src/opensfm/
 
-VOLUME /app/images
-VOLUME /app/images_resize
-VOLUME /app/odm_georeferencing
-VOLUME /app/odm_meshing
-VOLUME /app/odm_orthophoto
-VOLUME /app/odm_texturing
-VOLUME /app/odm_georeferencing
-VOLUME /app/opensfm
-VOLUME /app/pmvs
+VOLUME /code/images
+VOLUME /code/images_resize
+VOLUME /code/odm_georeferencing
+VOLUME /code/odm_meshing
+VOLUME /code/odm_orthophoto
+VOLUME /code/odm_texturing
+VOLUME /code/odm_georeferencing
+VOLUME /code/opensfm
+VOLUME /code/pmvs
 WORKDIR /code
 
 ENV LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/code/SuperBuild/install/lib"
